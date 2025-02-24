@@ -1,0 +1,18 @@
+h1 {
+    color: yellowgreen;
+}
+h2 {
+    color: pink; 
+    text-decoration: underline;
+}
+p {
+    color: orchid;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.special {
+    color: yellowgreen;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
