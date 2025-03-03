@@ -1,18 +1,35 @@
-h1 {
-    color: yellowgreen;
+body {
+    background: #ccc;
+    margin: 0;
+    padding: 0;
 }
-h2 {
-    color: pink; 
-    text-decoration: underline;
+nav ul {
+    background: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 40px;
 }
-p {
-    color: orchid;
+nav ul li {
+    display: inline;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 40px;
+    height: 40px;
 }
-.uppercase {
-    text-transform: uppercase;
+nav ul li a{
+    color: white;
+    text-decoration: none;
 }
-.special {
-    color: yellowgreen;
-    text-transform: uppercase;
-    text-decoration: underline;
+nav ul li a:hover {
+    color: red;
+}
+header h1{
+    text-align: center;
+}
+article header p{
+    font-style: italic;
+}
+main {
+    padding-left: 20px;
 }
