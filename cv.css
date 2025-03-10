@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 nav ul {
-    background: rgb(210, 151, 161) ;
+    background: rgb(27, 21, 21) ;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -22,19 +22,26 @@ nav ul li a{
     text-decoration: none;
 }
 nav ul li a:hover {
-    color: rgb(200, 117, 117);
+    color: rgb(81, 28, 28);
 }
 header h1{
     text-align: center;
+}
+header h2 {
+    color:rgb(48, 16, 16);
 }
 main {
     padding-left: 20px;
     font-size:16px;
 }
 .my-list img {
-    width: 150px;
-    height: 150px;
-    border-radius: 90%;
+    width: 200px;
+    height: 180px;
+    border-radius: 10%;
     display: block;
-    margin: 0 auto 50px;
+    margin: 0 auto 20px;
     }
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
