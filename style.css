@@ -1,8 +1,26 @@
-thead {
+* {font: 20px "Comic Sans MS";}
+MyCustomizeTag {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    width: 500px;
+}
+div { 
+    background-color: yellow;
+    margin: 0px 0px 5px 5px;
+    width: 300px;
+}
+.GroupFormat {
+    font-weight: bold;
     color: red;
+    width: 400px;
+} 
+#TheHighestPriority {
+    background-color: #000;
+    font-weight: none;
+    font: italic 30px "Times New Roman";
+    color: #fff;
 }
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 100%;
-}
+
+  
