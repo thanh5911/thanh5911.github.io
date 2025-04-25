@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Thiết lập mã hóa ký tự và khả năng responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tiêu đề của trang web -->
+    <title>Even or Odd Checker</title>
+</head>
+<body>
+    <!-- Container chứa các thành phần giao diện -->
+    <div>
+        <!-- Ô nhập số, người dùng nhập số bất kỳ -->
+        <input type="number" id="numberInput" placeholder="Enter a number">
+        <!-- Nút Check, gọi hàm checkNumber khi được nhấn -->
+        <button onclick="checkNumber()">Check</button>
+        <!-- Nút Reset, ban đầu ẩn, gọi hàm reset khi được nhấn -->
+        <button id="resetBtn" onclick="reset()" style="display: none;">Reset</button>
+        <!-- Vùng hiển thị kết quả (chẵn/lẻ hoặc thông báo lỗi) -->
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // Hàm kiểm tra số chẵn lẻ
+        function checkNumber() {
+            // Lấy giá trị từ ô nhập
+            const input = document.getElementById('numberInput').value;
+            // Lấy thẻ div để hiển thị kết quả
+            const resultDiv = document.getElementById('result');
+            // Lấy nút Reset
+            const resetBtn = document.getElementById('resetBtn');
+
+            // Kiểm tra nếu ô nhập trống
+            if (input === '') {
+                resultDiv.innerHTML = 'Enter a number!';
+                return;
+            }
+
+            // Chuyển đổi input thành số nguyên
+            const number = parseInt(input);
+            // Kiểm tra nếu input không phải là số hợp lệ
+            if (isNaN(number)) {
+                resultDiv.innerHTML = 'Invalid number!';
+                return;
+            }
+
+            // Kiểm tra số chẵn/lẻ và hiển thị kết quả theo định dạng "number is Even/Odd"
+            resultDiv.innerHTML = ${number} is ${number % 2 === 0 ? 'Even' : 'Odd'};
+            // Hiển thị nút Reset
+            resetBtn.style.display = 'inline';
+        }
+
+        // Hàm đặt lại trạng thái ban đầu
+        function reset() {
+            // Xóa giá trị trong ô nhập
+            document.getElementById('numberInput').value = '';
+            // Xóa kết quả hiển thị
+            document.getElementById('result').innerHTML = '';
+            // Ẩn nút Reset
+            document.getElementById('resetBtn').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+Viết cho Thanh 
+

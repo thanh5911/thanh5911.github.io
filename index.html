@@ -2,25 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
-    <!--JavaScript -->
 </head>
 <body>
     <form action="#">
         <input type="number" id="number1">
         <br>
-        <button>Check</button>
+        <button onclick="checkNumber();" on>Check</button>
     </form>
-    <!--JavaScript-->
     <script>
         function checkNumber() {
-            var x = parseInt (document.getRootNode("number1").nodeValue)
-            alert(x+1)
+            var x = parseInt(document.getElementById("number1").value);
             if (x % 2 === 0) {
-                alert ("Even")
+                // Method 1: create a new element and append it
+        var result = document.createElement("p");
+        result.innerHTML = x + "is Even";
+        document.getElementById("form_main").appendChild(result);
+               // Method 2: use append
+               // document.getElementById("form_main").append(""+ x +" is Even");
             }
-        }
-    </script>
+            else {
+                //document.write(x+"is Odd");
+            }
+    }
 </body>
 </html>
